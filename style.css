@@ -1,0 +1,156 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+label,
+footer a {
+    color: #ff4d6d;
+}
+
+header,
+section {
+    padding: 4rem;
+}
+
+header {
+    text-align: center;
+}
+
+header,
+#metodologia,
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 240px;
+    height: 240px;
+}
+
+header p {
+    width: 30%;
+}
+
+header a,
+form button {
+    background-color: #ff4d6d;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+header a:hover,
+form button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+header h1,
+.title {
+    margin: .1rem;
+}
+
+.title,
+form label {
+    font-weight: bold;
+}
+
+#vantagens,
+#beneficios {
+    background-color: #fff0f3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+    margin: 2rem;
+    width: 25rem;
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+form input,
+form textarea {
+    border: .15rem solid #ffccd5;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    margin: 0.5rem;
+}
+
+form button {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+footer {
+    text-align: center;
+    background-color: #c9184a;
+    color: white;
+    padding: 1.5rem;
+}
+
+footer a {
+    color: #ffccd5;
+}
+
+@media only screen and (max-width: 768px) {
+    header,
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    header,
+    section {
+        padding: 2rem;
+    }
+    header p,
+    #contato form {
+        width: 100%;
+    }
+    #vantagens,
+    #beneficios {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        text-align: center;
+        margin: 1rem;
+        width: 90%;
+    }
+}
